@@ -1,0 +1,20 @@
+table, th ,td{
+    border:1px solid black;
+    padding: 20px;
+}
+th{
+
+    border:1px solid black;
+}
+td{
+    border:1px solid black;
+}
+table{
+    border-collapse: collapse;
+}
+
+.normal-container{
+    border: 1px solid black;
+    height: 100px;
+    margin-bottom: 40px;
+}

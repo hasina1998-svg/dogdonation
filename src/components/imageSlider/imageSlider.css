@@ -1,0 +1,49 @@
+.slider {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .slick-prev:before {
+    color: black;
+  }
+  .slick-next:before {
+    color: black;
+  }
+  .imageslider-card {
+    height: 60%;
+    width: 80%;
+    margin-left: 15%;
+    margin-right: 5%;
+  }
+  .slider-image {
+    width: 70%;
+    height: 40%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .imageslider-text {
+    width: 70%;
+    height: 60%;
+    color: black !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  @media screen and (max-width: 480px){
+  
+  .slider-image{
+      justify-content: center;
+      align-items: center;
+      text-align: center;;
+  }
+  .simageslider-text{
+      justify-content: center;
+      align-items: center;
+      text-align: center;;
+  }
+  }

@@ -1,0 +1,18 @@
+.hero-image {
+  width: 80%;
+  height: 450px;
+  margin-left: 10%;
+  position: relative;
+}
+.hero-text {
+    width: 20%;
+  position: absolute;
+  top: 200px;
+  right: 200px;
+text-transform: uppercase;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+padding: 5px;
+}
+ 
