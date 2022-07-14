@@ -27,7 +27,7 @@ const Signin = () => {
     console.log(data);
   };
   return (
-    <div>
+
       <form onSubmit={handleSubmit(onSubmit)}>
       <Flex
       minH={'100vh'}
@@ -48,11 +48,13 @@ const Signin = () => {
           <Stack spacing={4}>
             <FormControl id="email">
               <FormLabel>Email address</FormLabel>
-              <Input type="email" />
+              <input  {...register('email')} />
             </FormControl>
             <FormControl id="password">
               <FormLabel>Password</FormLabel>
-              <Input type="password" />
+              <input {...register('password',{required:true,pattern:/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/g})}/ >
+                <br/>
+                {errors.password && <span>password must be of character 8 and must have one uppercase or special characters </span>}
             </FormControl>
             <Stack spacing={10}>
               <Stack
@@ -79,7 +81,7 @@ const Signin = () => {
     <ToastContainer/>
  
       </form>
-    </div>
+  
   );
 };
 

@@ -17,7 +17,7 @@ const Aboutus = () => {
         </Text>
 
         {/* donate button goes here */}
-        <Text  w={'40%'} >
+        <Text  w={'25%'} pb={30}>
           <Donate />
         </Text>
 

@@ -3,6 +3,7 @@ import { Image, Text } from "@chakra-ui/react";
 import Slider from "react-slick";
 import "./imageSlider.css";
 import imageData from "./imageData";
+import { Link as RouterLink } from "react-router-dom";
 
 const ImageSlider = () => {
   const settings = {
@@ -55,9 +56,10 @@ const ImageSlider = () => {
         {imageData.map((item, index) => {
           return (
             <div className="imageslider-card">
+          
               <img src={item.img} alt="pizza" className="slider-image" />
-
-              <h4 className="imageslider-text">{item.name}</h4>
+          
+              <h4 className="imageslider-text">{item.name} {}</h4>
             </div>
           );
         })}

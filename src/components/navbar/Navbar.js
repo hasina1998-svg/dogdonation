@@ -58,8 +58,12 @@ import {
               fontFamily={"heading"}
               color={useColorModeValue("gray.800", "white")}
               // onClick={NavigateRoute('/')}
+              onClick={()=>
+                NavigateRoute('/home')
+                // console.log('logo')
+              }
             >
-              Logo
+              DOG
             </Text>
   
             <Flex display={{ base: "none", md: "flex" }} ml={10}>
@@ -262,6 +266,7 @@ import {
   const NAV_ITEMS = [
     {
       label: "About us",
+      href:'/about'
       // children: [
       //   {
       //     label: 'Explore Design Work',
@@ -298,7 +303,7 @@ import {
     },
     {
       label: "Adopt",
-      href: "#",
+      href: "/adopt",
     },
     {
       label: " Contact us",

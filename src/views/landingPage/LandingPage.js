@@ -1,18 +1,27 @@
 import HeroSection from "../../components/heroSection/HeroSection"
 import Gallary from "../../components/gallary/Gallary"
 import Banner from "../../components/banner/Banner"
-import Aboutus from "../../components/aboutus/Aboutus"
 import Form from "../../components/form/Form"
-import Normal from "../../components/form/Normal"
+import Normal from "../../components/form/Normal";
+import ImageSlider from "../../components/imageSlider/ImageSlider"
+import Modals from "../../components/modals/Modals";
+
+
+
 const LandingPage = () => {
   return (
     <div>
-      <Form />
+      {/* <Form /> */}
       {/* <Normal/>  */}
       {/* <Banner/>
       <Aboutus/>
-     */}
+     */} <Modals/>
+     <Banner/>
+
+     <ImageSlider/>
+    
       {/* <Gallary/> */}
+      {/* <Aboutus/> */}
      {/* <HeroSection/>  */}
     </div>
   )

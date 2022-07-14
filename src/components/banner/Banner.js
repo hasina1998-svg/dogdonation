@@ -32,8 +32,14 @@ const Banner = () => {
         bgGradient={"linear(to-r, blackAlpha.600, transparent)"}
       >
         <Stack maxW={"2xl"} align={"flex-start"} spacing={6}>
-          <HStack justifyContent={'space-around'} spacing={200}>
+          <VStack justifyContent={'space-around'} 
+      
+           spacing={{base:10,md:30,lg:30,xl:30}}
+
+          >
           <Text
+          // direction='row'
+          direction={{base:'column',md:'column',lg:'row',xl:'row'}}
             color={"white"}
             fontWeight={700}
             lineHeight={1.2}
@@ -45,7 +51,7 @@ const Banner = () => {
           <Donate/>
            {/* donate button sends here */}
           {/* <SearchBar/> */}
-          </HStack>
+          </VStack>
         </Stack>
       </VStack>
     </Flex>

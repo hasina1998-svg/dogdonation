@@ -3,11 +3,11 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+
 const Donate = () => {
   const [show, setShow] = useState(true);
   const showHadler = () => {
     setShow(!show);
-  
   };
 
   return (
@@ -16,16 +16,14 @@ const Donate = () => {
         as={Button}
         rightIcon={show ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
         onClick={showHadler}
-        fontSize={'30px'}
-        w={'30%'}
-        // bg={'navy'}
-        // color={'white'}
-        p={8 }
-        
+        fontSize={"30px"}
+        // w={"70%"}
+        w={{base:'80%',md:"70%",lg:"70%",xl:"70%"}}
+        p={8}
       >
         Donate
       </MenuButton>
-      <MenuList fontSize={'20px'}>
+      <MenuList fontSize={"20px"}>
         <Link to="/signin">
           <MenuItem>Esewa</MenuItem>
         </Link>
